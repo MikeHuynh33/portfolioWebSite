@@ -1,0 +1,126 @@
+.About_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 25px);
+    height: 750px;
+    border-radius: 45px;
+    border: 3px solid #000;
+    background: #108786;
+    position: relative;
+    margin: 10px;
+    gap:24px;
+}
+.About_image{
+    width:330px;
+    height: 230px;
+    position: relative;
+    border-radius: 60px 0px  0px 0px;
+    background-color: #F9A825;
+    margin-top: 36px;
+}
+.profile_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60px 0px 0px 0px;
+}
+.About_content{
+    margin: 0 20px;
+    font-size: 17px;
+    line-height: 1.4em;
+    font-weight: bold;
+}
+.About_image_icons{
+    display: flex;
+    position: absolute;
+    bottom: -16px;
+    right:7px;
+    flex-direction: row;
+    gap:7px;
+    list-style: none;
+    z-index: 1;
+}
+.About_resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 70px;
+    width:50%;
+    background-color: #5F64E0;
+    bottom: -1px;
+    left:-2px   ;
+    border: 3px solid #000;
+    border-radius: 0px 0px 0px 42px;
+    color: #FFF;
+    font-size: 30px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+.About_contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 70px;
+    width:50%;
+    background-color: #5F64E0;
+    bottom: -1px;
+    left:49%;
+    border: 3px solid #000;
+    border-radius: 0px 0px 42px 0px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 3px;
+}
+.About_contact a {
+    text-decoration: none;
+        color: #FFF;
+}
+.About_resume a{
+    text-decoration: none;
+        color: #FFF;
+}
+
+@media screen and (min-width : 429px) {
+    .About_container{
+        flex-direction: row;
+    }
+    .About_image{
+        margin-top: 3em;
+        align-self: flex-start;
+        flex-basis: calc(50% - 1em);
+        margin-left: 1em;
+        height: 330px;
+    }
+    .About_content{
+        margin-top: 2.5em;
+        align-self: flex-start;
+        font-size: 1.4em;
+        font-weight: bold;
+        line-height: 1.3em;
+        flex-basis: calc(50% - 1em);
+    }
+    .About_contact{
+        left:49.5%;
+    }
+}
+
+@media screen and (min-width : 1129px) {
+    .About_container {
+        margin: auto;
+        width: 1000px
+    }
+    .About_image{
+       margin-top: 4em;     
+    }
+    .About_content{
+        margin-top: 6em;
+    }
+}

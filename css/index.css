@@ -1,0 +1,497 @@
+body{
+    margin: 0;
+    background-color: #121212;
+    scroll-behavior: smooth;
+}
+.nav_container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:55px;
+    background-color:#292626;
+    position: fixed;
+    top:0;
+    margin-top: 15px;
+    overflow: hidden;
+    z-index: 100;
+    transition: width 1s ease-in-out, height 0.1s ease-in-out;
+   
+}
+.nav_burger{
+    display: none;
+    margin-left: 15px;
+    flex-direction: column;
+    width: 40px;
+    height: 24px;
+    gap: 3px;
+    cursor: pointer;
+}
+.nav_burger__bun{
+    width: 40px;
+    height: 8px;
+    border-radius: 15px;
+    background-color: #03DAC5;
+}
+.nav_links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #292626;
+    gap: 30px;
+    transition :flex-direction 0.5s ease;
+}
+
+.nav_links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03DAC5;
+    cursor: pointer;
+}
+ .nav_container.active {
+     overflow: visible;
+ }
+ .wallpaper_container {
+    display: block;
+    margin-top: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ .wallpaper_headline{
+    position: relative;
+    font-family: Inter;
+    color: #FFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+ }
+ .wallpaper_content{
+    position: relative;
+    color: #FFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+ }
+ .Title {
+    color: #03DAC5;
+    margin-top: 50px;
+    font-family: Inter;
+ }
+ .skill_container {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     margin:33px;
+    flex-wrap: wrap;
+    
+ }
+.skill_item_contentContainer{
+    display: flex;
+    flex-direction: row;
+}
+.skill_item-language {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    position: relative;
+    max-width: 369px;
+    max-height: 231px;
+    min-height: 171px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 9px 9px 9px 7px rgba(187, 134, 252, 0.25);
+    background: #F9A825;
+    z-index: 1;
+}
+.skill_item-language::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top:0;
+    left:0;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    background: #CF6679;
+    z-index: -1;
+}
+.skill_item__header{
+    align-self: flex-start;
+    color: #121212;
+    margin-left: 20px;
+}
+.skill_item__leftContent {
+    display: flex;
+    flex-direction: column;
+    
+}
+.skill_item__leftContent li{
+    margin-bottom: 10px;
+}
+.skill_item__rightContent {
+    display: flex;
+    flex-direction: column;
+    
+}
+.skill_item__rightContent li {
+    margin-bottom: 10px;
+}
+.skill_item-frontend {
+    flex: 1;
+    position: relative;
+    max-width: 369px;
+    max-height: 223px;
+    min-height: 171px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 9px 9px 9px 7px rgba(187, 134, 252, 0.25);
+    background: #F9A825;
+    z-index: 1;
+}
+.skill_item-frontend::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    background: #CF6679;
+    z-index: -1;
+}
+
+.skill_item-backend {
+    flex: 1;
+    position: relative;
+    max-width: 369px;
+    max-height: 223px;
+    min-height: 171px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 9px 9px 9px 7px rgba(187, 134, 252, 0.25);
+    background: #F9A825;
+    z-index: 1;
+}
+
+.skill_item-backend::after {
+    content: "";
+    padding: 60px 0;
+    width: 100%;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 0;
+    background: #CF6679;
+    z-index: -1;
+}
+
+.skill_item-tools {
+    flex: 1;
+    position: relative;
+    max-width: 369px;
+    max-height: 223px;
+    min-height: 171px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 9px 9px 9px 7px rgba(187, 134, 252, 0.25);
+    background: #CF6679;
+    z-index: 1;
+}
+
+.skill_item-tools::after {
+    content: "";
+    padding: 60px 0;
+    width: 100%;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 0;
+    background: #F9A825;
+    z-index: -1;
+}
+
+@media screen and (max-width: 428px) {
+    .skill_container {
+        gap:37px;
+        
+    }
+    .nav_burger{
+        display: flex;
+    }
+    .nav_links {
+        padding: 10px 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+    .nav_links li{
+        width: 36px;
+        height: 35px;
+        border-radius: 8px;
+    }
+    .nav_links li img{
+        margin-top: 5px;
+        width: 27px;
+        height: 27px;
+    }
+    .wallpaper_container {
+        width: 428px;
+        height: 301px;
+        background-image: url("../photos/Wallpaper_Mobile.jpg");
+    }
+    .wallpaper_headline{
+        top: 5%;
+        left: 10%;
+        font-size: 36px;
+        font-weight: 700;
+        width: 360px;
+    }
+    .wallpaper_content{
+        top:12%;
+        left: 15%;
+        width: 300px;
+        font-size: 18px;
+        font-family: Inter;
+        font-weight: 600;  
+    }
+    .Title{
+        margin: 35px 0;
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 3px;
+    }
+    .skill_item__header{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    .skill_item__leftContent li{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+    .skill_item__rightContent li{
+        color: #000;
+        font-size: 20px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+}
+@media screen and (min-width: 429px) {
+    .skill_container {
+        gap: 37px;
+    }
+    .skill_item__header{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    .skill_item__leftContent li{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+    .skill_item__rightContent li{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+    .Title{
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        justify-content: center;
+        font-size: 46px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+    .nav_burger {
+        display: none;
+    }
+    .nav_links li {
+        width: 35px;
+        height: 38px;
+        border-radius: 5px;
+    }
+    .nav_links li img{
+        margin-top: 5px;
+        width: 27px;
+        height: 27px;
+    }
+    .skill_container {
+     flex-direction: row;
+    }
+    .wallpaper_container {
+        width: 100%;
+        height: 486px;
+        background-image: url("../photos/Wallpaper_Tablet.jpg");
+    }
+    .wallpaper_headline{
+        top: 10%;
+        left: 5%;
+        font-size: 48px;
+        font-weight: 700;
+        width: 750px;
+    }
+    .wallpaper_content{
+        top:28%;
+        left: 15%;
+        width: 600px;
+        font-size: 32px;
+        font-family: Inter;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+@media screen and (min-width: 926px ) and (max-width: 1456px) {
+
+    .skill_container {
+        gap: 107px;
+        margin-left: 10em;
+        margin-right: 10em;
+        justify-content: center;
+    }
+    .skill_item__header {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .skill_item__leftContent li {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+
+    .skill_item__rightContent li {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+
+    .Title {
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        justify-content: center;
+        font-size: 46px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    .nav_burger {
+        display: none;
+    }
+
+    .nav_links li {
+        width: 35px;
+        height: 38px;
+        border-radius: 5px;
+    }
+
+    .nav_links li img {
+        margin-top: 5px;
+        width: 27px;
+        height: 27px;
+    }
+
+    .skill_container {
+        flex-direction: row;
+    }
+
+    .wallpaper_container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 982px;
+        height: 486px;
+        background-image: url("../photos/Wallpaper_Web.jpg");
+    }
+
+    .wallpaper_headline {
+        top: 10%;
+        left: 5%;
+        font-size: 48px;
+        font-weight: 700;
+        width: 750px;
+    }
+
+    .wallpaper_content {
+        top: 28%;
+        left: 15%;
+        width: 600px;
+        font-size: 32px;
+        font-family: Inter;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+@media screen and (min-width: 1456px) {
+  
+    .Title {
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        justify-content: center;
+        font-size: 46px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+    
+    .wallpaper_container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 982px;
+        height: 486px;
+        background-image: url(../photos/Wallpaper_Web.jpg);
+    }
+  
+}
+
+.nav_container_sidebar {
+    display: flex;
+    width: 50px;
+    margin-right: auto;
+    margin-top: 0;
+    top: 0;
+    height: 300px;
+    right: 0;
+    transition: width 0.1s ease-in-out, height 1s ease-in-out;
+}
+
+.nav_links_sidebar {
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
