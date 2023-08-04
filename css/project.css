@@ -165,7 +165,7 @@
     .Project_container{
         flex-direction: row;
         overflow: hidden;
-        height: 100vh;
+        
         flex-wrap: wrap;
         position: sticky;
     }
